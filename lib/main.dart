@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       initialBinding: InitialBinding(), // dependency injection
-      initialRoute: Routes.PROFILE,
+      initialRoute: Routes.NAVIGATE,
       getPages: AppPages.routes,
       defaultTransition: Transition.fade,
     );

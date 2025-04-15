@@ -256,29 +256,29 @@ class ProfileView extends GetView<HomeController> {
           ],
         ),
       ),
-      bottomNavigationBar: Obx(
-        () => BottomNavigationBar(
-          currentIndex: controller.currentIndex.value,
-          onTap: controller.changeTab,
-          type: BottomNavigationBarType.fixed,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.rate_review),
-              label: 'Review',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.message_outlined),
-              label: 'Messages',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline),
-              label: 'Account',
-            ),
-          ],
-        ),
-      ),
+      // bottomNavigationBar: Obx(
+      //   () => BottomNavigationBar(
+      //     currentIndex: controller.currentIndex.value,
+      //     onTap: controller.changeTab,
+      //     type: BottomNavigationBarType.fixed,
+      //     items: const [
+      //       BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+      //       BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.rate_review),
+      //         label: 'Review',
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.message_outlined),
+      //         label: 'Messages',
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.person_outline),
+      //         label: 'Account',
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 

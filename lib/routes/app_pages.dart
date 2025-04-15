@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:yelp/modules/navigation/bindings/navigation.dart';
+import 'package:yelp/modules/navigation/views/navigation.dart';
 import 'package:yelp/modules/review/bindings/profile.dart';
 import 'package:yelp/modules/review/views/profile.dart';
 import 'package:yelp/modules/search/bindings/search.dart';
@@ -50,6 +52,14 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.NAVIGATE,
+      page: () => const NavigationView(),
+      binding: NavigationBinding(),
+      //  middlewares: [
+      //     AuthMiddleware(),
+      //   ]
     ),
   ];
 }
